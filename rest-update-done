@@ -1,0 +1,2 @@
+curl -X PUT http://127.0.0.1:5000/accounts/1 -H "Content-Type: application/json" -d '{"name":"John Doe Updated","email":"john_new@example.com"}'
+{"email":"john_new@example.com","id":1,"name":"John Doe Updated"}
