@@ -4,15 +4,16 @@ from flask_talisman import Talisman
 
 app = Flask(__name__)
 
-# Task 23: Mengaktifkan CORS untuk semua domain
+# Mengaktifkan CORS
 CORS(app)
 
-# Task 22: Mengaktifkan Talisman Keamanan
-# Catatan: force_https=False digunakan untuk keperluan testing lokal/dev environment
+# Mengaktifkan Talisman Keamanan
 talisman = Talisman(
     app,
     content_security_policy=None,
     force_https=False
 )
 
+# Beri tahu linter untuk mengabaikan pengecekan impor di baris bawah ini
+# flake8: noqa: F401
 from service import routes, models
