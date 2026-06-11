@@ -27,7 +27,7 @@ jobs:
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
-          pip install flake8 pylint nose coverage
+          pip install flake8 pylint nose coverage pinocchio
 
       - name: Lint with flake8
         run: flake8 .
