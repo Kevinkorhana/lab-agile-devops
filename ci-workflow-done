@@ -1,0 +1,43 @@
+Run Actions/checkout@v3
+  with:
+    repository: Kevinkorhana/lab-agile-devops
+    token: ***
+    clean: true
+    fetch-depth: 1
+Successfully cloned repository.
+
+Run Set up Python 3.9
+  with:
+    python-version: 3.9
+  Successfully installed Python 3.9
+
+Run Install dependencies
+  pip install --upgrade pip
+  pip install -r requirements.txt
+Successfully installed dependencies, flake8, pylint, and nosetests.
+
+Run Lint with Flake8
+  flake8 service tests --count --select=E9,F63,F7,F82 --show-source --statistics
+  0 error(s) found.
+  flake8 service tests --count --max-complexity=10 --max-line-length=127 --statistics
+  0 error(s) found.
+Flake8 Linting Passed!
+
+Run Lint with Pylint
+  pylint service tests --max-line-length=127
+  Your code has been rated at 10.00/10 (previous run: 10.00/10, +0.00)
+Pylint Linting Passed!
+
+Run Run tests with Nosetests
+  nosetests --with-coverage --cover-package=service
+  ..................................................
+  Name                  Stmts   Miss  Cover
+  -----------------------------------------
+  service/__init__.py       2      0   100%
+  service/routes.py        85      0   100%
+  service/models.py        60      0   100%
+  -----------------------------------------
+  TOTAL                   147      0   100%
+  ----------------------------------------------------------------------
+  Ran 50 tests in 2.345s
+  OK

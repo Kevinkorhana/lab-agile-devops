@@ -1,0 +1,6 @@
+{
+  "status": "success",
+  "message": "Account microservice is running on Kubernetes",
+  "version": "1.0.0",
+  "environment": "production"
+}

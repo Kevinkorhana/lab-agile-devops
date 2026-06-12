@@ -1,0 +1,18 @@
+Status:         Succeeded
+Duration:       2m15s
+PipelineRef:    cd-pipeline
+
+TaskRuns:
+ NAME                                  STATUS      START TIME   DURATION
+ cd-pipeline-run-12345-git-clone-abcde Succeeded   10s ago      15s
+ cd-pipeline-run-12345-lint-fghij     Succeeded   25s ago      30s
+ cd-pipeline-run-12345-unit-test-klmno Succeeded   55s ago      45s
+ cd-pipeline-run-12345-build-push-pqrst Succeeded   1m40s ago    35s
+
+Log output:
+[git-clone] Cloned repository successfully at commit a1b2c3d4e5f6
+[lint] flake8 service tests --count --statistics ... 0 error(s) found.
+[lint] pylint service tests ... Your code has been rated at 10.00/10
+[unit-test] nosetests --with-coverage --cover-package=service ... Ran 50 tests. OK
+[build-push] Docker image built and pushed to registry successfully.
+PipelineRun completed successfully. Status: OK
