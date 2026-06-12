@@ -1,6 +1,5 @@
-﻿# Lab Agile DevOps - Accounts Service
- 
-[![CI Build](https://github.com/Kevinkorhana/lab-agile-devops/actions/workflows/ci-build.yaml/badge.svg)](https://github.com/Kevinkorhana/lab-agile-devops/actions/workflows/ci-build.yaml)
+# DevOps Capstone
 
-## Deskripsi Proyek
-Aplikasi ini adalah REST API untuk manajemen data akun (*Accounts Service*) yang dibangun menggunakan framework Flask, dikonfigurasi dengan standar keamanan linting, pengujian otomatis, serta siap untuk di-deploy menggunakan Docker dan Kubernetes.
+[![Build Status](https://github.com/Kevinkorhana/devops-capstone-project/actions/workflows/workflow.yml/badge.svg)](https://github.com/Kevinkorhana/devops-capstone-project/actions)
+
+This repository contains the microservice application for the DevOps Capstone project.
